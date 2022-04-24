@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;700&display=swap');
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Public Sans', sans-serif;
+}
+
+.pageHeading {
+  padding: 0vh 0vh 0.6vh 0vh;
+  margin: 0vh 0vh 0.6vh 0vh;
+}
+
+.container {
+  margin: 2vh;
+  padding: 2vh;
+  height: 100%;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  flex-basis: 100%;
+  font-size: 16px;
+}
+
+.leftColumn,
+.rightColumn {
+  height: 60vh;
+}
+
+.doubleColumn {
+  flex-basis: 100%;
+  align-items: stretch;
+  height: 60vh;
+  padding: 0vh 0vh -2vh 0vh;
+  margin: 0vh 0vh -2vh 0vh;
+}
+
+.topRight,
+.topLeft,
+.bottomLeft,
+.bottomRight {
+  height: 100%;
+  padding: 2vh 0vh 0vh 0vh;
+  margin: 2vh 0vh 0vh 0vh;
+}
+
+.featureColumn {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0) 30%
+    ),
+    url('https://pnp.matrix.squiz.cloud/__data/assets/image/0022/5647/robot-hand.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-content: end;
+}
+
+.contentsTopAndBottom {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contentsBottom {
+  height: 60%;
+  background-color: #455d77;
+  display: flex;
+  flex-direction: column;
+}
+.contentsTop {
+  height: 40%;
+  background-image: url('https://pnp.matrix.squiz.cloud/__data/assets/image/0022/5647/robot-hand.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: black;
+}
+
+.yellow {
+  background-color: #f7cf5c;
+}
+
+.darkBlue {
+  background-color: #11263c;
+}
+
+.contentHeader {
+  font-size: 10px;
+  padding: 15px 0px 0px 15px;
+  display: flex;
+  color: white;
+}
+.contentBody {
+  display: flex;
+  flex-direction: column;
+  flex: 6;
+  overflow: hidden;
+  padding: 15px;
+  color: white;
+}
+
+.contentBody > h2 {
+  margin-bottom: 10px;
+}
+
+.featureColumn > div > .contentBody {
+  padding: 0px 0px 5px 15px;
+}
+
+.contentFooter {
+  display: flex;
+  font-size: 10px;
+  padding: 5px 0px 20px 15px;
+  align-items: flex-end;
+  color: white;
+}
+.yellow > .contentFooter,
+.yellow > .contentBody,
+.yellow > .contentHeader {
+  color: black;
+}
+
+.clickable {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.iconify {
+  margin-top: 1.4px;
+}
+
+@media screen and (min-width: 640px) {
+  .column {
+    flex: 1;
+    padding: 0vh 0vh 0vh 0vh;
+    margin: 0vh 0vh 0vh 0vh;
+    font-size: 12px;
+  }
+
+  .leftColumn,
+  .rightColumn {
+    height: 41.4vh;
+  }
+
+  .doubleColumn {
+    flex: 1;
+    height: 85vh;
+    padding-right: 1.2vh;
+    margin-right: 1.2vh;
+  }
+
+  .topRight {
+    height: 100%;
+    padding: 0vh 0vh 1.2vh 0.6vh;
+    margin: 0vh 0vh 1.2vh 0.6vh;
+    overflow: hidden;
+  }
+  .topLeft {
+    height: 100%;
+    padding: 0vh 0.6vh 0vh 0vh;
+    margin: 0vh 0.6vh 0vh 0vh;
+    overflow: hidden;
+  }
+  .bottomLeft {
+    height: 100%;
+    padding: 1.2vh 0.6vh 0vh 0vh;
+    margin: 1.2vh 0.6vh 0vh 0vh;
+    overflow: hidden;
+  }
+  .bottomRight {
+    height: 100%;
+    padding: 1.2vh 0vh 0vh 0.6vh;
+    margin: 1.2vh 0vh 0vh 0.6vh;
+    overflow: hidden;
+  }
+}
